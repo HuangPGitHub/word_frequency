@@ -1,0 +1,2616 @@
+cscope 15 $HOME/word_fre_test -q 0000000109 0000011806
+	@doubleList.c
+
+1 
+	~"doubÀLi°.h
+"
+
+2 
+	~<°dlib.h
+>
+
+3 
+	~<mem‹y.h
+>
+
+5 
+LökLi°
+* 
+	$LökLi°_Cª©e
+()
+
+7 
+LökLi°
+ *
+lökli°
+ = 
+NULL
+;
+
+8 
+lökli°
+ = 
+	`mÆloc
+((
+LökLi°
+));
+
+9 if(!
+lökli°
+)
+
+10  
+NULL
+;
+
+11 
+	`mem£t
+(
+lökli°
+ , 0 , (
+LökLi°
+));
+
+12 
+lökli°
+->
+hód
+.
+√xt
+ = 
+NULL
+;
+
+13 
+lökli°
+->
+hód
+.
+¥ev
+ = 
+NULL
+;
+
+14 
+lökli°
+->
+Àn
+ = 0;
+
+16  
+lökli°
+;
+
+17 
+	}
+}
+
+20 
+	$LökLi°_In£π
+(
+LökLi°
+* 
+lökli°
+, 
+Node
+* 
+node
+, 
+pos
+)
+
+22 if(
+lökli°
+ =
+NULL
+ || 
+node
+ ==NULL || 
+pos
+<0)
+
+24 
+Node
+ *
+cuºít
+;
+
+25 
+i
+ = 0;
+
+26 
+cuºít
+ =&(
+lökli°
+->
+hód
+);
+
+27 
+i
+ = 0;i<
+pos
+ &&(
+cuºít
+->
+√xt
+!
+NULL
+); i++)
+
+29 
+cuºít
+ = cuºít->
+√xt
+;
+
+31 if(
+cuºít
+->
+√xt
+ =
+NULL
+)
+
+33 
+cuºít
+->
+¥ev
+ = 
+NULL
+;
+
+34 
+cuºít
+->
+√xt
+ = 
+node
+;
+
+35 
+node
+->
+¥ev
+ = 
+cuºít
+;
+
+36 
+node
+->
+√xt
+ = 
+NULL
+;
+
+37 
+lökli°
+->
+Àn
+++;
+
+41 
+node
+->
+¥ev
+ = 
+cuºít
+;
+
+42 
+node
+->
+√xt
+ = 
+cuºít
+->next;
+
+43 
+cuºít
+->
+√xt
+->
+¥ev
+ = 
+node
+;
+
+44 
+cuºít
+->
+√xt
+ = 
+node
+;
+
+45 
+lökli°
+->
+Àn
+++;
+
+49 
+	}
+}
+
+52 
+Node
+* 
+	$LökLi°_Sórch
+(
+LökLi°
+* 
+lökli°
+, * 
+vÆ
+, 
+VÆCom∑ª
+ 
+vÆcom∑ª
+)
+
+54 if(
+lökli°
+ =
+NULL
+)
+
+55  
+NULL
+;
+
+56 
+Node
+* 
+tmp
+;
+
+57 
+tmp
+ =
+lökli°
+->
+hód
+.
+√xt
+;
+
+58  
+tmp
+!
+NULL
+)
+
+60 if(
+	`vÆcom∑ª
+(
+tmp
+, 
+vÆ
+))
+
+61  
+tmp
+;
+
+63 
+tmp
+ =Åmp->
+√xt
+;
+
+65  
+NULL
+;
+
+66 
+	}
+}
+
+68 
+Node
+* 
+	$LökLi°_Sórch_Node
+(
+LökLi°
+* 
+lökli°
+, 
+Node
+* 
+node
+)
+
+70 if(
+lökli°
+ =
+NULL
+ || 
+node
+ == NULL)
+
+71  
+NULL
+;
+
+72 
+Node
+* 
+tmp
+;
+
+73 
+tmp
+ =
+lökli°
+->
+hód
+.
+√xt
+;
+
+74  
+tmp
+!
+NULL
+)
+
+76 if(
+tmp
+==
+node
+)
+
+77  
+tmp
+;
+
+79 
+tmp
+ =Åmp->
+√xt
+;
+
+81  
+NULL
+;
+
+82 
+	}
+}
+
+84 
+	$Sw≠
+(
+Node
+* 
+node1
+, Node* 
+node2
+)
+
+86 
+Node
+* 
+node1_p
+ = 
+node1
+->
+¥ev
+;
+
+87 
+Node
+* 
+node1_n
+ = 
+node1
+->
+√xt
+;
+
+88 if(
+node1
+->
+√xt
+ =
+node2
+)
+
+90 
+node1
+->
+¥ev
+->
+√xt
+ = 
+node2
+;
+
+91 
+node2
+->
+¥ev
+ = 
+node1
+->prev;
+
+92 
+node1
+->
+√xt
+ = 
+node2
+->next;
+
+93 if(
+node2
+->
+√xt
+ !
+NULL
+)
+
+94 
+node2
+->
+√xt
+->
+¥ev
+ = 
+node1
+;
+
+95 
+node2
+->
+√xt
+ = 
+node1
+;
+
+96 
+node1
+->
+¥ev
+ = 
+node2
+;
+
+100 
+node1
+->
+¥ev
+ = 
+node2
+->prev;
+
+101 
+node1
+->
+√xt
+ = 
+node2
+->next;
+
+102 
+node2
+->
+¥ev
+->
+√xt
+ = 
+node1
+;
+
+103 if(
+node2
+->
+√xt
+ !
+NULL
+)
+
+104 
+node2
+->
+√xt
+->
+¥ev
+ = 
+node1
+;
+
+106 
+node2
+->
+¥ev
+ = 
+node1_p
+;
+
+107 
+node2
+->
+√xt
+ = 
+node1_n
+;
+
+108 
+node1_n
+->
+¥ev
+ = 
+node2
+;
+
+109 if(
+node1_p
+ !
+NULL
+)
+
+110 
+node1_p
+->
+√xt
+ = 
+node2
+;
+
+113 
+	}
+}
+
+115 
+	$Sw≠IJ
+(
+Node
+** 
+node1
+, Node** 
+node2
+)
+
+117 
+Node
+* 
+tmp
+;
+
+118 
+tmp
+ = *
+node1
+;
+
+119 *
+node1
+ = *
+node2
+;
+
+120 *
+node2
+ = 
+tmp
+;
+
+123 
+	}
+}
+
+126 
+	$qS‹t
+(
+Node
+* 
+bgnNode
+, Node* 
+ídNode
+, 
+Com∑ª
+ 
+com∑ª
+)
+
+128 if(
+bgnNode
+ =
+NULL
+ || 
+ídNode
+ == NULL || bgnNode ==ÉndNode)
+
+131 
+Node
+* 
+°‹gbgnN
+ = 
+bgnNode
+;
+
+132 
+Node
+* 
+°‹gídN
+ = 
+ídNode
+;
+
+133 
+Node
+* 
+iNode
+ = 
+bgnNode
+;
+
+134 
+Node
+* 
+jNode
+ = 
+ídNode
+;
+
+135 
+Node
+* 
+tmpNode
+ = 
+bgnNode
+;
+
+137 
+iNode
+ !
+jNode
+)
+
+139  
+	`com∑ª
+(
+jNode
+, 
+tmpNode
+Ë&& 
+iNode
+!= jNode)
+
+142 
+jNode
+ = jNode->
+¥ev
+;
+
+144 if(
+iNode
+ !
+jNode
+)
+
+147 
+	`Sw≠
+(
+iNode
+ , 
+jNode
+);
+
+148 if(
+iNode
+ =
+°‹gbgnN
+)
+
+150 
+°‹gbgnN
+ = 
+jNode
+;
+
+152 if(
+jNode
+ =
+°‹gídN
+)
+
+154 
+°‹gídN
+ = 
+iNode
+;
+
+156 
+	`Sw≠IJ
+(&
+iNode
+, &
+jNode
+);
+
+157 
+iNode
+ = iNode->
+√xt
+;
+
+159  !
+	`com∑ª
+(
+iNode
+, 
+tmpNode
+Ë&& iNode!=
+jNode
+)
+
+161 
+iNode
+ = iNode->
+√xt
+;
+
+163 if(
+iNode
+ !
+jNode
+)
+
+165 
+	`Sw≠
+(
+iNode
+, 
+jNode
+);
+
+166 if(
+jNode
+ =
+°‹gídN
+)
+
+168 
+°‹gídN
+ = 
+iNode
+;
+
+170 if(
+iNode
+ =
+°‹gbgnN
+)
+
+172 
+°‹gbgnN
+
+jNode
+;
+
+174 
+	`Sw≠IJ
+(&
+iNode
+, &
+jNode
+);
+
+175 
+jNode
+ = jNode->
+¥ev
+;
+
+179 if(
+tmpNode
+ !
+°‹gbgnN
+ )
+
+180 
+	`qS‹t
+(
+°‹gbgnN
+ , 
+tmpNode
+->
+¥ev
+, 
+com∑ª
+);
+
+182 if(
+tmpNode
+ !
+°‹gídN
+)
+
+183 
+	`qS‹t
+(
+tmpNode
+->
+√xt
+, 
+°‹gídN
+, 
+com∑ª
+);
+
+186 
+	}
+}
+
+189 
+	$LökLi°_S‹t_Node
+(
+LökLi°
+* 
+lökli°
+, 
+Com∑ª
+ 
+com∑ª
+)
+
+191 if(
+lökli°
+ =
+NULL
+ ||Üökli°->
+Àn
+ <0)
+
+194 
+Node
+* 
+bgnNode
+;
+
+195 
+Node
+* 
+ídNode
+;
+
+197 
+bgnNode
+ = 
+lökli°
+->
+hód
+.
+√xt
+;
+
+198 
+ídNode
+ = &(
+lökli°
+->
+hód
+);
+
+199 
+ídNode
+->
+√xt
+)
+
+201 
+ídNode
+ =ÉndNode->
+√xt
+;
+
+203 
+	`qS‹t
+(
+bgnNode
+ ,
+ídNode
+, 
+com∑ª
+);
+
+206 
+	}
+}
+
+209 
+LökLi°
+* 
+	$LökLi°_S‹t
+(
+LökLi°
+* 
+lökli°
+,
+low
+, 
+high
+, 
+Com∑ª
+ 
+com∑ª
+, 
+Assign
+ 
+assign
+)
+
+211 if(
+lökli°
+ =
+NULL
+)
+
+212  
+NULL
+;
+
+213 
+n
+ = 0;
+
+214 
+i
+ = 
+low
+;
+
+215 
+j
+ = 
+high
+;
+
+216 
+Node
+* 
+iNode
+;
+
+217 
+Node
+* 
+jNode
+;
+
+218 
+Node
+* 
+tmpNode
+ = 
+	`mÆloc
+((Node));
+
+219 if(
+tmpNode
+ =
+NULL
+)
+
+220  
+NULL
+;
+
+221 
+iNode
+ = 
+lökli°
+->
+hód
+.
+√xt
+;
+
+223 
+n
+=0;Ç<
+i
+&&(
+iNode
+->
+√xt
+!=
+NULL
+);Ç++)
+
+225 
+iNode
+ = iNode->
+√xt
+;
+
+227 
+	`mem˝y
+(
+tmpNode
+, 
+iNode
+, (
+Node
+));
+
+228 
+tmpNode
+ = 
+	`assign
+—mpNode, 
+iNode
+);
+
+230 
+jNode
+ = 
+lökli°
+->
+hód
+.
+√xt
+;
+
+231 
+n
+=0;Ç<
+j
+&&(
+jNode
+->
+√xt
+!=
+NULL
+);Ç++)
+
+233 
+jNode
+ = jNode->
+√xt
+;
+
+235 if(
+low
+<
+high
+)
+
+237 
+i
+ < 
+j
+)
+
+239 
+	`com∑ª
+(
+jNode
+ ,
+tmpNode
+)&&(
+i
+ < 
+j
+))
+
+241 
+j
+--;
+
+242 
+jNode
+ = jNode->
+¥ev
+;
+
+245 if(
+i
+ < 
+j
+)
+
+247 
+iNode
+ = 
+	`assign
+(iNode, 
+jNode
+);
+
+248 
+i
+++;
+
+249 
+iNode
+ = iNode->
+√xt
+;
+
+252 !
+	`com∑ª
+(
+iNode
+, 
+tmpNode
+)&&(
+i
+ < 
+j
+))
+
+254 
+i
+++;
+
+255 
+iNode
+ = iNode->
+√xt
+;
+
+257 if(
+i
+ < 
+j
+)
+
+259 
+jNode
+ = 
+	`assign
+(jNode, 
+iNode
+);
+
+260 
+j
+--;
+
+261 
+jNode
+ = jNode->
+¥ev
+;
+
+266 
+iNode
+ = 
+	`assign
+(iNode, 
+tmpNode
+);
+
+268 
+	`LökLi°_S‹t
+(
+lökli°
+ , 
+low
+, 
+i
+-1, 
+com∑ª
+, 
+assign
+);
+
+269 
+	`LökLi°_S‹t
+(
+lökli°
+ , 
+i
++1, 
+high
+, 
+com∑ª
+, 
+assign
+);
+
+272 if(
+tmpNode
+!=
+NULL
+)
+
+274 
+	`‰ì
+(
+tmpNode
+);
+
+275 
+tmpNode
+ = 
+NULL
+;
+
+277  
+lökli°
+;
+
+278 
+	}
+}
+
+281 
+	$LökLi°_Tøvî£
+(
+LökLi°
+* 
+lökli°
+, 
+PrötFun
+ 
+¥öt
+)
+
+283 if(
+lökli°
+ =
+NULL
+)
+
+285 
+Node
+* 
+tmp
+;
+
+286 
+tmp
+ = &(
+lökli°
+->
+hód
+);
+
+287 
+tmp
+->
+√xt
+)
+
+289 
+tmp
+ =Åmp->
+√xt
+;
+
+290 
+	`¥öt
+(
+tmp
+);
+
+292 
+	}
+}
+
+295 
+	$LökLi°_Tøvî£_Revî£
+(
+LökLi°
+* 
+lökli°
+, 
+PrötFun
+ 
+¥öt
+)
+
+297 if(
+lökli°
+ =
+NULL
+)
+
+299 
+Node
+* 
+tmp
+;
+
+300 
+tmp
+ = &(
+lökli°
+->
+hód
+);
+
+302 
+tmp
+->
+√xt
+)
+
+304 
+tmp
+ =Åmp->
+√xt
+;
+
+306 
+tmp
+->
+¥ev
+)
+
+308 
+	`¥öt
+(
+tmp
+);
+
+309 
+tmp
+ =Åmp->
+¥ev
+;
+
+312 
+	}
+}
+
+317 
+	$LökLi°_Lígth
+(
+LökLi°
+* 
+lökli°
+)
+
+319  
+lökli°
+->
+Àn
+;
+
+320 
+	}
+}
+
+323 
+	$LökLi°_De°‹y
+(
+LökLi°
+* 
+lökli°
+)
+
+325 if(!
+lökli°
+)
+
+327 
+	`‰ì
+(
+lökli°
+);
+
+328 
+lökli°
+ = 
+NULL
+;
+
+330 
+	}
+}
+
+333 
+Node
+* 
+	$LökLi°_Gë
+(
+LökLi°
+* 
+lökli°
+, 
+pos
+)
+
+335 if(
+lökli°
+ =
+NULL
+ || 
+pos
+<0)
+
+336  
+NULL
+;
+
+337 
+Node
+* 
+cuºít
+;
+
+338 
+i
+ = 0;
+
+339 
+cuºít
+ = &(
+lökli°
+->
+hód
+);
+
+340 
+i
+ = 0;i<
+pos
+ &&(
+cuºít
+->
+√xt
+!
+NULL
+);i++)
+
+342 
+cuºít
+ = cuºít->
+√xt
+;
+
+345  
+cuºít
+->
+√xt
+;
+
+346 
+	}
+}
+
+349 
+Node
+* 
+	$LökLi°_Dñëe
+(
+LökLi°
+* 
+lökli°
+, 
+pos
+)
+
+351 if(
+lökli°
+ =
+NULL
+ || 
+pos
+<0)
+
+354 
+Node
+ *
+cuºít
+;
+
+355 
+Node
+ *
+tmpNode
+;
+
+356 
+i
+ = 0;
+
+358 
+cuºít
+ =&(
+lökli°
+->
+hód
+);
+
+359 
+i
+ = 0;i<
+pos
+ && (
+cuºít
+->
+√xt
+!
+NULL
+);i++)
+
+361 
+cuºít
+ = cuºít->
+√xt
+;
+
+363 
+tmpNode
+ = 
+cuºít
+->
+√xt
+;
+
+364 
+cuºít
+->
+√xt
+ = 
+tmpNode
+->next;
+
+365 
+tmpNode
+->
+¥ev
+ = 
+cuºít
+->prev;
+
+366 
+lökli°
+->
+Àn
+--;
+
+367  
+tmpNode
+;
+
+368 
+	}
+}
+
+371 
+LökLi°
+* 
+	$LökLi°_Dñëe_Node
+(
+LökLi°
+* 
+lökli°
+, * 
+vÆ
+, 
+VÆCom∑ª
+ 
+vÆcom∑ª
+)
+
+373 if(
+lökli°
+ =
+NULL
+ )
+
+376 
+Node
+ *
+cuºít
+;
+
+377 
+i
+ = 0;
+
+379 
+cuºít
+ =
+lökli°
+->
+hód
+.
+√xt
+;
+
+380 
+cuºít
+!
+NULL
+)
+
+382 if(
+	`vÆcom∑ª
+(
+cuºít
+, 
+vÆ
+))
+
+384 
+cuºít
+->
+¥ev
+->
+√xt
+ = current->next;
+
+385 
+cuºít
+->
+√xt
+->
+¥ev
+ = current->prev;
+
+386 
+lökli°
+->
+Àn
+--;
+
+387  
+lökli°
+;
+
+390 
+cuºít
+ = cuºít->
+√xt
+;
+
+392 
+	`¥ötf
+("Delete Node Not Found!\n");
+
+393  
+NULL
+;
+
+394 
+	}
+}
+
+397 
+	$LökLi°_Fªe
+(
+LökLi°
+* 
+lökli°
+ , 
+FªeMem‹y
+ 
+‰ìmem
+)
+
+399 if(
+lökli°
+ =
+NULL
+ ||Üökli°->
+Àn
+ <0)
+
+401 
+Node
+ *
+tmpNode
+;
+
+402 
+Node
+ *
+°‹gNode
+;
+
+403 
+tmpNode
+ = &(
+lökli°
+->
+hód
+);
+
+404 
+tmpNode
+->
+√xt
+)
+
+406 
+tmpNode
+ =ÅmpNode->
+√xt
+;
+
+407 
+	`‰ìmem
+(
+tmpNode
+);
+
+408 
+lökli°
+->
+Àn
+--;
+
+410 
+	}
+}
+
+	@doubleList.h
+
+1 
+	~<°dio.h
+>
+
+3 
+	sègNode
+
+
+5 
+ègNode
+* 
+	m¥ev
+;
+
+6 
+ègNode
+* 
+	m√xt
+;
+
+7 }
+	tNode
+;
+
+9 
+	sègLökLi°
+
+
+11 
+Node
+ 
+	mhód
+;
+
+12 
+	mÀn
+;
+
+13 }
+	tLökLi°
+;
+
+15 (*
+	tPrötFun
+)(
+	tNode
+ *
+	tnode
+);
+
+16 (*
+	tCom∑ª
+)(
+	tNode
+* 
+	tnode1
+,Node* 
+	tnode2
+);
+
+17 (*
+	tVÆCom∑ª
+)(
+	tNode
+* 
+	tnode
+, * 
+	tvÆ
+);
+
+18 
+Node
+* (*
+	tAssign
+)(
+	tNode
+* 
+	tnode1
+,Node* 
+	tnode2
+);
+
+19 (*
+	tFªeMem‹y
+)(
+	tNode
+ *
+	tnode
+);
+
+22 
+LökLi°
+* 
+	`LökLi°_Cª©e
+();
+
+24 
+	`LökLi°_In£π
+(
+LökLi°
+* 
+lökli°
+, 
+Node
+* 
+node
+, 
+pos
+);
+
+26 
+Node
+* 
+	`LökLi°_Sórch
+(
+LökLi°
+* 
+lökli°
+, * 
+vÆ
+, 
+VÆCom∑ª
+ 
+vÆcom∑ª
+);
+
+28 
+Node
+* 
+	`LökLi°_Sórch_Node
+(
+LökLi°
+* 
+lökli°
+, Node* 
+node
+);
+
+30 
+LökLi°
+* 
+	`LökLi°_S‹t
+(LökLi°* 
+lökli°
+,
+low
+, 
+high
+, 
+Com∑ª
+ 
+com∑ª
+, 
+Assign
+ 
+assign
+);
+
+32 
+	`LökLi°_S‹t_Node
+(
+LökLi°
+* 
+lökli°
+, 
+Com∑ª
+ 
+com∑ª
+);
+
+34 
+	`LökLi°_Tøvî£
+(
+LökLi°
+* 
+lökli°
+, 
+PrötFun
+ 
+¥öt
+);
+
+36 
+	`LökLi°_Tøvî£_Revî£
+(
+LökLi°
+* 
+lökli°
+, 
+PrötFun
+ 
+¥öt
+);
+
+38 
+	`LökLi°_Lígth
+(
+LökLi°
+* 
+lökli°
+);
+
+40 
+	`LökLi°_De°‹y
+(
+LökLi°
+* 
+lökli°
+);
+
+42 
+Node
+* 
+	`LökLi°_Gë
+(
+LökLi°
+* 
+lökli°
+, 
+pos
+);
+
+44 
+Node
+* 
+	`LökLi°_Dñëe
+(
+LökLi°
+* 
+lökli°
+, 
+pos
+);
+
+46 
+LökLi°
+* 
+	`LökLi°_Dñëe_Node
+(LökLi°* 
+lökli°
+, *
+vÆ
+, 
+VÆCom∑ª
+ 
+vÆcom∑ª
+);
+
+48 
+	`LökLi°_Fªe
+(
+LökLi°
+* 
+lökli°
+ , 
+FªeMem‹y
+ 
+‰ìmem
+);
+
+50 
+	`Sw≠
+(
+Node
+* 
+node1
+, Node* 
+node2
+);
+
+	@main_word_frq.c
+
+1 
+	~<°dio.h
+>
+
+2 
+	~<°rög.h
+>
+
+3 
+	~<°dlib.h
+>
+
+4 
+	~<mem‹y.h
+>
+
+5 
+	~<uni°d.h
+>
+
+6 
+	~"doubÀLi°.h
+"
+
+9 
+	#WORD_LEN
+ 64
+
+	)
+
+11 
+	sègW‹dNode
+
+
+13 
+Node
+ 
+	mnode
+;
+
+14 
+	mw‹d
+[
+WORD_LEN
+];
+
+15 
+	mtimes
+;
+
+16 }
+	tW‹dNode
+;
+
+18 
+	$SåögCom∑ª
+(
+Node
+* 
+node
+, *
+°r
+)
+
+20 
+W‹dNode
+ *
+tmpNode
+ = (W‹dNode*Ë
+node
+;
+
+21  
+	`°rcmp
+(
+tmpNode
+->
+w‹d
+ , 
+°r
+)? 0:1;
+
+22 
+	}
+}
+
+24 
+	$Pröt
+(
+Node
+* 
+node
+)
+
+26 
+W‹dNode
+* 
+tmpNode
+ = (W‹dNode*)
+node
+;
+
+27 
+	`¥ötf
+("%† %d\n", 
+tmpNode
+->
+w‹d
+,ÅmpNode->
+times
+);
+
+29 
+	}
+}
+
+31 
+	$Com∑ªNode
+(
+Node
+* 
+node1
+, Node* 
+node2
+)
+
+33 
+W‹dNode
+* 
+tmpNode1
+ = (W‹dNode*)
+node1
+;
+
+34 
+W‹dNode
+* 
+tmpNode2
+ = (W‹dNode*)
+node2
+;
+
+35  (
+tmpNode1
+->
+times
+ >=
+tmpNode2
+->times) ? 1:0;
+
+36 
+	}
+}
+
+39 
+	$FªeNodeMem
+(
+Node
+* 
+node
+)
+
+41 
+W‹dNode
+* 
+tmpNode
+ = (W‹dNode*)
+node
+;
+
+42 if(
+tmpNode
+!
+NULL
+)
+
+45 
+	`‰ì
+(
+tmpNode
+);
+
+49 
+	}
+}
+
+51 
+	$W‹dPro˚ss
+(*
+°r
+, 
+disˇp
+ , *
+a·îÀn
+)
+
+53 if(
+°r
+ =
+NULL
+)
+
+55 
+i
+ = 0, 
+j
+ =0, 
+k
+ = 0;
+
+56 
+w‹dÀn
+ = 
+	`°æí
+(
+°r
+);
+
+57 
+Àn
+ = 
+w‹dÀn
+;
+
+58 
+tm∂í
+ = 0;
+
+59 if(
+disˇp
+ == 0)
+
+61 
+i
+=0; i<
+w‹dÀn
+; i++)
+
+63 if(
+°r
+[
+i
+]>='A'&&str[i]<='Z')
+
+64 
+°r
+[
+i
+] =str[i] + 32;
+
+67 
+i
+=0; i<
+w‹dÀn
+; i++)
+
+69 if(!(
+°r
+[0]>='A'&&str[0]<='Z' || str[0]>='a'&&str[0]<='z'))
+
+71 
+k
+ = 0;
+
+72 
+k
+<
+w‹dÀn
+)
+
+74 
+°r
+[
+k
+] = str[k+1];
+
+75 
+k
+++;
+
+77 
+Àn
+--;
+
+79 
+tm∂í
+ = 
+Àn
+;
+
+80 if(!(
+°r
+[
+tm∂í
+-1]>='A'&&str[tmplen-1]<='Z' || str[tmplen-1]>='a'&&str[tmplen-1]<='z'))
+
+82 
+°r
+[
+tm∂í
+-1] = str[tmplen];
+
+83 
+tm∂í
+--;
+
+84 
+Àn
+--;
+
+88 *
+a·îÀn
+ = 
+Àn
+;
+
+89 
+	}
+}
+
+91 
+	$maö
+(
+¨gc
+, * 
+¨gv
+[])
+
+93 
+LökLi°
+* 
+lökli°
+;
+
+94 
+tmpw‹d
+[
+WORD_LEN
+*2] = "";
+
+95 
+FILE
+ *
+Â
+;
+
+96 
+i
+ = 0;
+
+97 
+a·îÀn
+ = 0;
+
+98 
+bS‹t
+ = 0;
+
+99 
+bDis
+ = 0;
+
+100 
+ch
+;
+
+101 
+›ãº
+ = 0;
+
+102 (
+ch
+ = 
+	`gë›t
+(
+¨gc
+ , 
+¨gv
+, "sd")) != -1)
+
+104 
+ch
+)
+
+107 
+bS‹t
+ = 1;
+
+110 
+bDis
+ = 1;
+
+118 
+lökli°
+ = 
+	`LökLi°_Cª©e
+();
+
+119 if(
+lökli°
+ =
+NULL
+)
+
+121 
+	`¥ötf
+("LinkList_CreateÉrror!\n");
+
+126 
+Â
+ = 
+	`f›í
+(
+¨gv
+[
+›töd
+], "r");
+
+127 if(
+Â
+ =
+NULL
+)
+
+129 
+	`¥ötf
+("File Open Failed!\n");
+
+133 
+	`fsˇnf
+(
+Â
+, "%s", 
+tmpw‹d
+)!
+EOF
+)
+
+135 
+	`W‹dPro˚ss
+(
+tmpw‹d
+ ,
+bDis
+ ,&
+a·îÀn
+);
+
+136 if–
+a·îÀn
+ > 
+WORD_LEN
+)
+
+138 
+Node
+* 
+tmpNode
+ = 
+	`LökLi°_Sórch
+(
+lökli°
+, 
+tmpw‹d
+ , 
+SåögCom∑ª
+);
+
+139 if(
+tmpNode
+ =
+NULL
+)
+
+141 
+W‹dNode
+* 
+pW‹dNode
+ =(W‹dNode*)
+	`mÆloc
+((WordNode));
+
+142 
+	`mem£t
+(
+pW‹dNode
+ ,0 , (
+W‹dNode
+));
+
+143 
+	`°r˝y
+(
+pW‹dNode
+->
+w‹d
+ , 
+tmpw‹d
+);
+
+144 
+pW‹dNode
+->
+times
+++;
+
+145 
+	`LökLi°_In£π
+(
+lökli°
+ ,(
+Node
+*)
+pW‹dNode
+ ,0);
+
+149 
+W‹dNode
+* 
+tmpW‹dNode
+ = (W‹dNode*)
+tmpNode
+;
+
+150 
+tmpW‹dNode
+->
+times
+++;
+
+154 
+	`LökLi°_Tøvî£_Revî£
+(
+lökli°
+, 
+Pröt
+);
+
+156 if(
+bS‹t
+)
+
+158 
+	`LökLi°_S‹t_Node
+(
+lökli°
+ ,
+Com∑ªNode
+);
+
+161 
+	`¥ötf
+("After Sort:\n");
+
+162 
+	`LökLi°_Tøvî£
+(
+lökli°
+, 
+Pröt
+);
+
+164 
+	`LökLi°_Fªe
+(
+lökli°
+ , 
+FªeNodeMem
+);
+
+165 
+	`LökLi°_De°‹y
+(
+lökli°
+);
+
+167 
+	`f˛o£
+(
+Â
+);
+
+169 
+	}
+}
+
+	@
+1
+.
+0
+3
+42
+doubleList.c
+doubleList.h
+main_word_frq.c

@@ -1,0 +1,11 @@
+maindoubleList : maindoubleList.o libdoubleList.a
+	gcc -o maindoubleList maindoubleList.o libdoubleList.a
+libdoubleList.a : doubleList.o
+	ar rc libdoubleList.a doubleList.o
+maindoubleList.o : maindoubleList.c doubleList.h
+	gcc -c -g maindoubleList.c 
+doubleList.o : doubleList.c doubleList.h
+	gcc -c -g doubleList.c
+.PHONY : clean
+clean :
+	rm maindoubleList doubleList.o maindoubleList.o libdoubleList.a
